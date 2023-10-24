@@ -12,6 +12,10 @@
         .a2 { background-color: tomato;
             
         }
+        .addstyle {
+            background-color: green;
+
+        }
     </style>
 </head>
 <body>
@@ -19,6 +23,32 @@
     <section class="a2">My friend</section>
     <footer>Goodbye</footer>
     
+
+    <section>
+
+    <article id="b1">1
+        <input id="btn1" type="button" value="OK">
+    </article>
+    <article id="b2">2
+        <input id="btn2" type="button" value="OK">
+    </article>
+    <article id="b3">3
+        <input id="btn3" type="button" value="OK">
+    </article>
+
+
+
+</section>
+    <script>
+document.getElementById("btn1").addEventListener('click', function(){
+    document.getElementById("b1").style.color="#FF0001"})
+
+    document.getElementById("btn2").addEventListener('click', function(){
+    document.getElementById("b2").style.color="blue"})
+
+    document.getElementById("btn3").addEventListener('click', function(){
+    document.getElementById("b3").classList.add("addstyle")})
+    </script>
 
 
 
